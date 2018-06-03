@@ -3,17 +3,41 @@
 <head>
   <title>Example Scala.js application</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <style>
+      .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body style="margin: 0px">
 
-  <div>
-      <canvas style="display: block" id="canvas" width="255" height="255"/>
-  </div>
-
   <script type="text/javascript" src="./target/scala-2.12/supermarket-fastopt.js"></script>
+
+
+  <table>
+    <tr>
+      <td> <button class="button" onclick="TutorialApp.pop(document.getElementById('value'))">
+        <strong>-</strong> </button> </td>
+      <td id="value" style="padding: 5px 5px">
+        <script> TutorialApp.changetxt(document.getElementById('value')) </script> </td>
+      <td> <button class="button" onclick="TutorialApp.push(document.getElementById('value'))">
+        <strong>+</strong> </button> </td>
+    </tr>
+  </table>
+
+  <br/><br/>
 
   <button id="click-me-button" type="button"
     onclick="ScalaJSExample2.draw(document.getElementById('canvas'))"> Start drawing </button>
+
+  <div> <canvas style="display: block" id="canvas" width="255" height="255"/> </div>
 
 
 </body>
