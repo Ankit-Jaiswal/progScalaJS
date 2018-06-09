@@ -5,7 +5,7 @@ import dom.document
 import dom.html
 import scala.scalajs.js.annotation.JSExportTopLevel
 import scala.scalajs.js.annotation.JSExport
-
+import scalatags.JsDom.all._
 
 @JSExportTopLevel("TutorialApp")
 object TutorialApp {
@@ -41,14 +41,17 @@ object TutorialApp {
     target.innerHTML = quant.toString
   }
 
+  @JSExport
+  def addItem(target: html.Div): Unit {
+    val
+  }
 
-
-  def main(args: Array[String]): Unit = {
+/*  def main(args: Array[String]): Unit = {
     appendPar(document.body, "Hello World")
 
     val par = document.createElement("p")
     val txt = document.createTextNode("no one can stop main() function.")
     par.appendChild(txt)
     document.body.appendChild(par)
-  }
+  } */
 }

@@ -24,7 +24,11 @@ case object shop {
         cart(this) = cart(this) - 1
         cart
       }
+  }
+
+  def main(args: Array[String]): Unit = {
 
   }
+
 
 }

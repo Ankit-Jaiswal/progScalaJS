@@ -3,11 +3,109 @@
   <head>
     <meta charset="UTF-8">
     <title>The Scala.js Tutorial</title>
-  </head>
-  <body>
-    <!-- Include Scala.js compiled code -->
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
     <script type="text/javascript" src="./target/scala-2.12/supermarket-fastopt.js"></script>
+  </head>
+  <body style="background-color: antiquewhite">
 
-    <button id="click-me-button" type="button" onclick="addClickedMessage()"> Click me! </button>
+    <div class="cover">
+        <img src="namaste.jpg" />
+        <div class="colorBar" >
+            <table>
+                <tr>
+                    <td> &emsp; &emsp; &emsp; Pranam </td>
+                    <td> Bhaiya! &emsp; &emsp; &emsp; </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <nav>
+        <table>
+            <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="about.html">About</a></td>
+            <td><a href="/cv.pdf">Groceries</a></td>
+            <td><a href="blog.html">Vegetables</a></td>
+            <td><a href="https://github.com/Ankit-Jaiswal">Snacks</a></td>
+            <td><a href="/gallery">Settings</a></td>
+            </tr>
+        </table>
+    </nav>
+
+
+    <div id="container">
+      <div class="itemBox">
+        <table>
+          <td width="250px"><img class="itemImage" src="./pics/sugar.jpg"/></td>
+          <td width="600px">sugar</td>
+          <td>
+            <table>
+                <td> <button class="button" onclick="TutorialApp.pop(document.getElementById('value'))">
+                  <strong>-</strong> </button> </td>
+                <td id="value" style="padding: 5px 5px">
+                  <script> TutorialApp.changetxt(document.getElementById('value')) </script> </td>
+                <td> <button class="button" onclick="TutorialApp.push(document.getElementById('value'))">
+                  <strong>+</strong> </button> </td>
+            </table>
+          </td>
+        </table>
+      </div>
+
+      <div class="itemBox">
+        <table>
+          <td width="250px"><img class="itemImage" src="./pics/colgate.jpg"/></td>
+          <td width="600px">colgate</td>
+          <td>
+            <table>
+                <td> <button class="button" onclick="TutorialApp.pop(document.getElementById('value'))">
+                  <strong>-</strong> </button> </td>
+                <td id="value" style="padding: 5px 5px">
+                  <script> TutorialApp.changetxt(document.getElementById('value')) </script> </td>
+                <td> <button class="button" onclick="TutorialApp.push(document.getElementById('value'))">
+                  <strong>+</strong> </button> </td>
+            </table>
+          </td>
+        </table>
+      </div>
+
+
+      <div class="itemBox">
+        <table>
+          <td width="250px"><img class="itemImage" src="./pics/paneer.jpg"/></td>
+          <td width="600px">Paneer</td>
+          <td>
+            <table>
+                <td> <button class="button" onclick="TutorialApp.pop(document.getElementById('value'))">
+                  <strong>-</strong> </button> </td>
+                <td id="value" style="padding: 5px 5px">
+                  <script> TutorialApp.changetxt(document.getElementById('value')) </script> </td>
+                <td> <button class="button" onclick="TutorialApp.push(document.getElementById('value'))">
+                  <strong>+</strong> </button> </td>
+            </table>
+          </td>
+        </table>
+      </div>
+
+
+      <div class="itemBox">
+        <table>
+          <td width="250px"><img class="itemImage" src="./pics/bru.jpg"/></td>
+          <td width="600px">what else, coffee</td>
+          <td>
+            <table>
+                <td> <button class="button" onclick="TutorialApp.pop(document.getElementById('value'))">
+                  <strong>-</strong> </button> </td>
+                <td id="value" style="padding: 5px 5px">
+                  <script> TutorialApp.changetxt(document.getElementById('value')) </script> </td>
+                <td> <button class="button" onclick="TutorialApp.push(document.getElementById('value'))">
+                  <strong>+</strong> </button> </td>
+            </table>
+          </td>
+        </table>
+      </div>
+
+    </div>
+
   </body>
 </html>
